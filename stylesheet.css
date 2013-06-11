@@ -1,0 +1,111 @@
+html body {
+
+	text-align:center;
+	border: 1px solid black;
+	height: auto;
+	min-height: 99%;
+	margin: 0px;
+	padding: 0px;
+	overflow: auto;
+}
+
+div {
+	border: 1px dashed black;
+
+}
+
+#container{
+
+	
+	width: 70%; 
+	min-width: 250px;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+
+#logo {
+
+
+
+
+
+}
+
+#menu {
+
+	background-color: gray;
+	
+
+
+}
+
+#main {
+
+	
+	
+
+
+}
+
+.icon {
+
+	max-width: 30%;
+	min-width: 15%;
+}
+
+#pakete {
+
+	display: table;
+	width: 100%;
+
+
+}
+
+.paket {
+
+	display: table-cell;
+	/*padding:40px;*/
+	width: 33%;
+
+
+}
+
+.paket h3 {
+
+	padding: 0;
+	margin: 5;
+
+}
+
+.paket p {
+
+	padding: 0px 10px 5px 10px ;
+	text-align: justify;
+	margin: 0;
+}
+
+.paket a {
+
+	text-decoration: none;
+	color: black;
+}
+
+.paket > a:hover {
+	background-color: black;
+}
+
+#logoParade
+{
+	width: 728px;
+	height: 75px;
+	position: relative;
+}
+
+#logoParade div.scrollableArea a
+{
+	display: block;
+	float: left;
+	padding-left: 10px;
+}
