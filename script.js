@@ -1,16 +1,32 @@
-$(document).ready(function() {
-	$("#logoParade").smoothDivScroll({ 
-		autoScrollingMode: "always", 
-		autoScrollingDirection: "endlessLoopRight", 
-		autoScrollingStep: 1, 
-		autoScrollingInterval: 25 
-	});
+$.Elastislide.defaults = {
+    // orientation 'horizontal' || 'vertical'
+    orientation : 'horizontal',
+ 
+    // sliding speed
+    speed : 500,
+ 
+    // sliding easing
+    easing : 'ease-in-out',
+ 
+    // the minimum number of items to show.
+    // when we resize the window, this will make sure minItems are always shown
+    // (unless of course minItems is higher than the total number of elements)
+    minItems : 4,
+ 
+    // index of the current item (left most item of the carousel)
+    start : 0,
+     
+    // click item callback
+    onClick : function( el, position, evt ) { return false; },
+    onReady : function() { return false; },
+    onBeforeSlide : function() { return false; },
+    onAfterSlide : function() { return false; }
+};
 
-	// Logo parade event handlers
-	$("#logoParade").bind("mouseover", function() {
-		$(this).smoothDivScroll("stopAutoScrolling");
-	}).bind("mouseout", function() {
-		$(this).smoothDivScroll("startAutoScrolling");
+(function($) {
+	$(document).ready(function() {
+		$('#carousel').elastislide();	
 	});
+})(jQuery);
 
-});
+// $('#carousel').elastislide();	

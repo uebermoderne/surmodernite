@@ -1,0 +1,31 @@
+/* RATING */
+
+.feinduraPlugin_pageRating ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.feinduraPlugin_pageRating li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.feinduraPlugin_pageRating a.star, .feinduraPlugin_pageRating a.star:visited {
+  display: block;
+  width: 23px;
+  height: 20px;
+  background: url("star.png") no-repeat;
+  float: left;
+}
+.feinduraPlugin_pageRating a.star.filled {
+  background-position: -23px 0;
+}
+/* when modernizer is used */
+.ie6 .feinduraPlugin_pageRating a.star.filled {
+  background-position: -23px 0 !important;
+}
+.feinduraPlugin_pageRating ul.unrated a.star:hover, .feinduraPlugin_pageRating ul.unrated a.star:focus {
+  background-position: -46px 0;
+}
