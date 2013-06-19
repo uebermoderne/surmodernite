@@ -5,59 +5,139 @@
 	<title>surmodernite - Web-/Grafikdesign</title>
 		
 		<meta charset= "UTF-8">
-		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		
 		<link rel="stylesheet" type="text/css" href="elastislide.css">
 		<link rel="stylesheet" type="text/css" href="custom.css">
+		<link rel="stylesheet" type="text/css" href="component.css" />
+        <link rel="stylesheet" type="text/css" href="default.css" /> 
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="js/jquerypp.custom.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.17475.js"></script>
         <script type="text/javascript" src="js/jquery.elastislide.js"></script>
         <script type="text/javascript" src="script.js"></script>
+		<script src="script_grid.js"></script>
+        <script src="js/modernizr.custom.js"></script>
 
 </head>
 
 <body>
-<div id ="test">
-	
-	<a href= "index.html"><img src= "sum_logo.png"></a>
-		
-		<div id = "icon"><img src= "images/fb_icon.png"></div>
 
-</div>
+	
+		
+
 
 
 <div id = "all">
 <!--<img src ="surmodernite_logo_test2.png">-->
 
 	<div id="header">
-		<div id = "logo">
-			<!-- <a href= "index.html"><img src ="sum_3.png"></a> -->
-			<div id = "menu">
-           
-				<span><a href="#">Produkt</a></span><span><a href="#">Philosophie</a></span><span><a href="#">Referenzen</a></span><span><a href="#">Kontakt</a></span>
+
+		<a href= "index.html"><img src= "sum_logo.png"></a>
+			
+			<div id = "adresse">
+
+				<p style="padding-left:50px"> Britzer damm 54 a : 12347 Berlin : 030/ 120 231 06</p>
+
 			</div>
-		</div>	
+
+			<div id="breadcrumbs">
+				<a href = "index.html">home</a> 
+			</div>
+
+
+
+			<!-- <div id = "menu">
+				<span><a href="produkt.html"><img src = "product_icon.png" width="10%"></a></span>
+				<span><a href="philosophie.html"><img src = "philosophy_icon.png" width="10%"></a></span>
+				<span><a href="referenzen.html"><img src = "referenzen_icon.png" width="10%"></a></span>
+				<span><a href="kontakt.html"><img src = "kontakt_icon.png" width="10%"></a></span>
+			</div> -->
+		
 	</div>
 
 
 <div id = "container">
 
-
-
-<!-- <iframe src="home.html">
-	</iframe> -->
-  
-
-	<div id = "main">
-
-		<div id="preview">
-
-
-
-
+  <div id="main">
+	<div class = "text">
+		<div id = "begruessung">
+			<p>
+			<span style="color: white; font-size: 1.3em; font-family: Impact; padding-right: 0.25em;">surmodernite </span>bietet professionelles Webdesign.
+			</p>
+			<p>
+			Wir gestalten und modernisieren Ihre Webpräsenz, bringen sie online und helfen Ihnen dabei,
+			Ihre Vorstellungen zu verwirklichen.
+			</p>
+			<p>
+			Kontaktieren Sie uns für weitere Details und eine individuelle Beratung!
+			</p>
+		</div>
 	</div>
 
-		<div id = "panel">
+	<div id= "referenz">
+
+	<div class="container">	
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+				
+			</div><!--/ Codrops top bar -->
+			<!-- <header class="clearfix">
+				<h1>Referenzen <span>www.surmodernite.de</span></h1>	
+			</header> -->
+			<div class="main">
+				<ul id="og-grid" class="og-grid">
+					<li>
+						<a href="http://www.freiluftfestival.eu" data-largesrc="images/freiluftopenair3.png" data-title="Freiluft-Festival Usedom 2013" data-description="<p>Website für das Freiluft Festival in Usedom 2013.</p> Grafiken: Marcel Geldner /// Umsetzung: surmodernite">
+							<img src="images/freiluftopenair2.png" alt="FreiluftFestivalUsedom"/>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://www.surmodernite.de" data-largesrc="progress.png" data-title="still in progress" data-description="">
+							<img src="progress.png" alt="FreiluftFestivalUsedom"/>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://www.surmodernite.de" data-largesrc="progress.png" data-title="still in progress" data-description="">
+							<img src="progress.png" alt="FreiluftFestivalUsedom"/>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://www.surmodernite.de" data-largesrc="progress.png" data-title="still in progress" data-description="">
+							<img src="progress.png" alt="FreiluftFestivalUsedom"/>
+						</a>
+					</li>
+
+				
+					
+				</ul>
+			<!-- 	<p>Filler text by <a href="http://veggieipsum.com/">Veggie Ipsum</a></p> -->
+			<!-- 	<a id="og-additems" href="#">add more</a> -->
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+				// adding more items
+				$('#og-additems').on( 'click', function() {
+					var $items = $( '<li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li><li><a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot."><img src="images/thumbs/1.jpg" alt="img01"/></a></li>' ).appendTo( $( '#og-grid' ) );
+					
+					Grid.addItems( $items );
+					return false;
+				} );
+			});
+		</script>
+
+	
+
+</div>
+</div>
+		<!-- <div id = "panel">
 			<ul id="carousel" class="elastislide-list">
     			<li><a href="#"><img src="images/komponist_cmb.png" alt="komponist-cmb.de" /></a></li>
     			<li><a href="#"><img src="images/freiluftopenair.png" alt="freiluftfestival.eu" /></a></li>
@@ -70,36 +150,36 @@
     			<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
     			<li><a href="#"><img src="images/small/1.jpg" alt="image01" /></a></li>
 			</ul>
-		</div>
+		</div> -->
 
 <div id="pakete">
 
 
-		<div class ="paket"><a href = ""><img class = "icon" src ="web_icon.png">
+		<div class ="paket"><a href = "produkt.html"><img class = "icon" src ="pen_icon2.png">
 			
-			<h3>Webdesign</h3>
+			<!-- <h3>Webdesign</h3> -->
 			
-				<p>Beratung</p>
+				<!-- <p>Beratung</p>
 				<p>Entwicklung</p>
-				<p>Markenstrategie</p>
+				<p>Markenstrategie</p> -->
 
 		</div>
 
-		<div class ="paket"><a href = ""><img class = "icon" src ="pen_icon.png">
-			<h3>Grafikdesign</h3>
+		<div class ="paket"><a href = "preis.html"><img class = "icon" src ="web_icon2.png">
+			<!-- <h3>Grafikdesign</h3> -->
 			
-				<p>Konzeption</p>
+				<!-- <p>Konzeption</p>
 				<p>Gestaltung</p>
-				<p>Corporate Design</p>
+				<p>Corporate Design</p> -->
 
 		</div>
 
 
-		<div class ="paket"><a href = ""><img class = "icon" src ="fon_icon.png">
-			<h3>Kontakt</h3>
-			<p>Mo-Fr von 12:00 - 20:00 Uhr</p>
+		<div class ="paket"><a href = "kontakt.html"><img class = "icon" src ="brief_icon2.png">
+			<!-- <h3>Kontakt</h3> -->
+			<!-- <p>Mo-Fr von 12:00 - 20:00 Uhr</p>
 			<p>030 / 120 231 06</p> 
-			<p>surmodernite@gmail.com</p></div>
+			<p>surmodernite@gmail.com</p></div> -->
 
 
 		</div>
@@ -116,7 +196,9 @@
 
 </div>
 
-<div id ="footer"><img src= "images/sum_logo_klein.png"></div>
+</div>
+
+<div id ="footer"><a href="impressum.html">Impressum</a><a href="agb.html">AGB</a><img src= "images/sum_logo_klein.png"></div>
 </body>
 
 
