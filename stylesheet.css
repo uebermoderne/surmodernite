@@ -33,6 +33,13 @@ html body {
 
 }
 
+#lang a {
+
+	color: white;
+
+
+}
+
  #menu a:hover {
 	
 	border-bottom: 5px solid #50A7B5; 
@@ -42,7 +49,7 @@ html body {
 
 a {
 	
-	color:#2D2C2A;
+	color:white;
 	text-decoration: none;
 	
 }

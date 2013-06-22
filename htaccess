@@ -1,0 +1,14 @@
+
+#
+# feindura - Flat File CMS -> Pretty URL Rewrite Code
+#
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteBase /
+  # rewrite "/page/example-page" and "/category/example-category/example-page"
+  # also passes the session var
+  RewriteCond %{REQUEST_URI} !\.(css|jpg|gif|png|js)$ [NC] #do the stuff that follows only if the request doesnt end in one of these file extensions.
+  RewriteCond %{HTTP_HOST} ^localhost$
+  RewriteRule ^(?:([a-zA-Z]{2})/{1})?page/(?:[\/a-zA-Z0-9_-]*/{1})?([a-zA-Z0-9_-]+).*?$ /?page=$2&language=$1 [QSA,L]
+  RewriteRule ^(?:([a-zA-Z]{2})/{1})?category/([a-zA-Z0-9_-]+)/(?:[\/a-zA-Z0-9_-]*/{1})?([a-zA-Z0-9_-]+).*?$ /?category=$2&page=$3&language=$1 [QSA,L]
+</IfModule>
